@@ -1,5 +1,5 @@
 :root {
-  --verde-principal: #25d066;
+  --verde-principal: #24ff72;
   --verde-2: #1bad53;
   --verde-3: #24ff72;
   --verde-4: #eefcf3;
@@ -44,6 +44,7 @@ a {
   width: min(1200px, 92vw);
   margin: 0 auto;
   padding: 0 1rem;
+  border-radius: 6px;
 }
 
 header {
@@ -88,7 +89,7 @@ nav {
 
 nav a {
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.125rem;
   color: var(--cinza-1);
   transition: color 0.3s ease;
 }
@@ -104,6 +105,7 @@ nav a:focus-visible {
   justify-content: center;
   gap: 0.35rem;
   padding: 0.85rem 1.6rem;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.95rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, color 0.3s ease;
@@ -143,6 +145,7 @@ nav a:focus-visible {
   width: 44px;
   height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   background: transparent;
   color: var(--branco);
   display: none;
@@ -207,8 +210,7 @@ p {
 .hero {
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at top, rgba(36, 255, 114, 0.15), transparent 45%),
-    linear-gradient(180deg, #020202 0%, #020d07 40%, #010602 100%);
+  background: #010602;
   position: relative;
   isolation: isolate;
 }
@@ -218,7 +220,6 @@ p {
   position: absolute;
   inset: 20% 10% auto 10%;
   height: 70%;
-  background: linear-gradient(130deg, rgba(37, 208, 102, 0.15), transparent);
   filter: blur(80px);
   z-index: -1;
 }
@@ -253,7 +254,8 @@ p {
 }
 
 .whatsapp-mockup {
-  width: min(540px, 46vw);
+  width: 100%;
+  max-width: min(620px, 52vw);
   justify-self: end;
 }
 
@@ -262,6 +264,10 @@ p {
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  aspect-ratio: 1200 / 1328;
+  object-fit: contain;
+  background: #050505;
 }
 
 .grid {
@@ -275,6 +281,7 @@ p {
 
 .card {
   padding: 1.8rem;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(37, 208, 102, 0.2);
   height: 100%;
@@ -299,6 +306,7 @@ p {
   background: rgba(37, 208, 102, 0.15);
   color: var(--verde-principal);
   font-size: 1.8rem;
+  border-radius: 6px;
 }
 
 .card h3 {
@@ -310,22 +318,26 @@ p {
 }
 
 #porque {
-  background: #25d066;
+  background: #24ff72;
   border-top: 1px solid rgba(37, 208, 102, 0.3);
   border-bottom: 1px solid rgba(37, 208, 102, 0.3);
 }
 
+#porque h2 {
+  color: var(--preto);
+}
+
 #porque .section-intro p,
 #porque .card p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #porque .card {
-  background: rgba(0, 0, 0, 0.35);
+  background: var(--preto);
 }
 
 #porque .card:hover {
-  background: rgba(0, 0, 0, 0.45);
+  background: #000c05;
 }
 
 .stats-section {
@@ -355,6 +367,7 @@ p {
 .logo-placeholder {
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,9 +382,15 @@ p {
   filter: saturate(0.9) brightness(1.1);
 }
 
+.cta-wrapper {
+  background: var(--verde-principal);
+  padding: 3rem 0;
+}
+
 .cta-section {
-  background: linear-gradient(135deg, rgba(37, 208, 102, 0.3), rgba(0, 30, 10, 0.95));
-  border: 1px solid rgba(37, 208, 102, 0.35);
+  background: var(--preto);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
   padding: 3rem;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
@@ -387,9 +406,8 @@ input,
 select {
   width: 100%;
   padding: 0.95rem 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: var(--branco);
-  color: var(--preto);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -456,7 +474,7 @@ form button {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(37, 208, 102, 0.2);
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .policy-card h2 {
@@ -591,6 +609,8 @@ footer .footer-links a:hover {
 
   .whatsapp-mockup {
     width: 100%;
+    max-width: 100%;
+    justify-self: center;
   }
 }
 
