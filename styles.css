@@ -112,6 +112,10 @@ nav a:focus-visible {
   will-change: transform;
 }
 
+.nav-cta {
+  display: none;
+}
+
 .btn.primary {
   background: linear-gradient(135deg, var(--verde-principal), var(--verde-3));
   color: var(--preto);
@@ -146,6 +150,7 @@ nav a:focus-visible {
   justify-content: center;
   cursor: pointer;
   transition: border-color 0.3s ease, transform 0.2s ease;
+  z-index: 1001;
 }
 
 .hamburger:hover {
@@ -248,8 +253,8 @@ p {
 }
 
 .whatsapp-mockup {
-  width: min(520px, 45vw);
-  justify-self: center;
+  width: min(540px, 46vw);
+  justify-self: end;
 }
 
 .whatsapp-mockup video {
@@ -389,6 +394,16 @@ select {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #111 50%),
+    linear-gradient(135deg, #111 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2.5rem;
+}
+
 input:focus,
 select:focus {
   outline: none;
@@ -405,6 +420,62 @@ form button {
   margin-top: 1rem;
   color: var(--cinza-1);
   font-size: 0.95rem;
+}
+
+.policy-page main {
+  padding-top: 130px;
+}
+
+.policy-hero {
+  padding: 5rem 0 3rem;
+  background: linear-gradient(135deg, rgba(37, 208, 102, 0.2), rgba(0, 0, 0, 0.85));
+}
+
+.policy-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.policy-hero p {
+  max-width: 760px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.policy-content {
+  background: var(--preto-suave);
+  padding: 4rem 0 5rem;
+}
+
+.policy-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.policy-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(37, 208, 102, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.policy-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.policy-card ul {
+  padding-left: 1.2rem;
+  color: var(--cinza-1);
+  line-height: 1.5;
+}
+
+.policy-card ul li {
+  margin-bottom: 0.35rem;
+}
+
+.policy-card a {
+  color: var(--verde-3);
 }
 
 footer {
@@ -454,18 +525,35 @@ footer .footer-links a:hover {
 @media (max-width: 1024px) {
   nav {
     position: fixed;
-    inset: 0 0 0 auto;
-    width: min(280px, 80vw);
-    background: rgba(0, 0, 0, 0.95);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(320px, 85vw);
+    height: 100vh;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: flex-start;
     padding: 6rem 2rem 2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 998;
   }
 
   nav.open {
     transform: translateX(0);
+  }
+
+  nav a:not(.btn) {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 1.5rem;
   }
 
   .hamburger {
@@ -478,6 +566,12 @@ footer .footer-links a:hover {
 
   .whatsapp-mockup {
     margin: 0 auto;
+    width: min(520px, 70vw);
+    justify-self: center;
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
   }
 }
 
@@ -494,6 +588,10 @@ footer .footer-links a:hover {
   .cta-section {
     padding: 2rem;
   }
+
+  .whatsapp-mockup {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -505,8 +603,16 @@ footer .footer-links a:hover {
     gap: 0.5rem;
   }
 
+  .hero-grid {
+    gap: 2rem;
+  }
+
   form {
     grid-template-columns: 1fr;
+  }
+
+  nav {
+    width: 100%;
   }
 }
 
