@@ -312,6 +312,12 @@ p {
 .card h3 {
   font-size: 1.3rem;
 }
+.card-subtitle {
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  color: var(--verde-principal);
+  letter-spacing: 0.01em;
+}
 
 .diferenciais {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -417,6 +423,22 @@ p {
 .cta-wrapper {
   background: var(--verde-principal);
   padding: 3rem 0;
+  text-align: center;
+}
+
+.form-illustration {
+  width: min(320px, 70vw);
+  margin: 0 auto -1rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-wrapper .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cta-section {
