@@ -262,7 +262,6 @@ p {
 .whatsapp-mockup video {
   width: 100%;
   display: block;
-  border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
   border-radius: 14px;
   aspect-ratio: 1200 / 1328;
