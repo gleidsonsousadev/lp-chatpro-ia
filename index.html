@@ -1,211 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chatPro IA | Agentes de IA para WhatsApp</title>
-    <meta
-      name="description"
-      content="IA para WhatsApp da sua empresa sem complicação. Agende com um especialista do chatPro IA e automatize suas conversas para vender mais."
-    />
-    <meta property="og:title" content="chatPro IA — IA para WhatsApp sem complicação" />
-    <meta
-      property="og:description"
-      content="Agentes inteligentes que atendem 24/7 — para pequenas e médias empresas que querem vender mais e atender melhor."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://chatpro.com.br/ia" />
-    <meta property="og:image" content="https://chatpro.com.br/ia/og-image.jpg" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%2325D066' cx='16' cy='16' r='16'/%3E%3Cpath fill='%23fff' d='M21.4 10.2c-.6-.7-1.6-1.1-3-1.1h-5.8c-1.4 0-2.4.4-3 1.1-.6.7-.9 1.7-.9 3v6.7c0 1.3.3 2.3.9 3 .6.7 1.6 1.1 3 1.1h3.7l2.6 2.8c.3.3.7.5 1.2.5.2 0 .4 0 .6-.1.6-.3.9-.8.9-1.5v-1.6c1.4-.1 2.4-.4 3-1.1.6-.7.9-1.7.9-3v-6.7c.1-1.3-.2-2.3-.8-3Z'/%3E%3C/svg%3E"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  </head>
-  <body>
-    <header id="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="#hero" aria-label="chatPro IA">
-          <img src="images/logo-chatpro.svg" alt="Logo do chatPro®" width="150" height="34" loading="lazy" />
-        </a>
-        <nav id="main-nav">
-          <a href="#oferecemos">O que oferecemos</a>
-          <a href="#porque">Por que nós</a>
-          <a href="#contato">Contato</a>
-          <a class="btn primary nav-cta" href="#contato">Agende com um Especialista</a>
-        </nav>
-        <a class="btn primary desktop-cta" href="#contato">Agende com um Especialista</a>
-        <button class="hamburger" id="nav-toggle" aria-label="Abrir menu">
-          <i class="ph ph-list"></i>
-        </button>
-      </div>
-    </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="hero" id="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy fade-in">
-            <h1>IA para WhatsApp da sua empresa sem complicação</h1>
-            <p>
-              Agentes inteligentes que atendem 24/7 — para pequenas e médias empresas que querem vender mais e atender melhor.
-            </p>
-            <div class="cta-group">
-              <a class="btn primary" href="#contato">Agende com um Especialista</a>
-            </div>
-          </div>
-          <div class="whatsapp-mockup fade-in" style="transition-delay: 0.15s">
-            <video
-              src="videos/video-dialogo-v5.mp4"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              aria-label="Demonstração do chatPro IA respondendo conversas no WhatsApp"
-            >
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>chatPro IA | Agentes de IA para WhatsApp</title>
+  <meta name="description"
+    content="IA para WhatsApp da sua empresa sem complicação. Agende com um especialista do chatPro IA e automatize suas conversas para vender mais." />
+  <meta property="og:title" content="chatPro IA — IA para WhatsApp sem complicação" />
+  <meta property="og:description"
+    content="Agentes inteligentes que atendem 24/7 — para pequenas e médias empresas que querem vender mais e atender melhor." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chatpro.com.br/ia" />
+  <meta property="og:image" content="https://chatpro.com.br/ia/og-image.jpg" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%2325D066' cx='16' cy='16' r='16'/%3E%3Cpath fill='%23fff' d='M21.4 10.2c-.6-.7-1.6-1.1-3-1.1h-5.8c-1.4 0-2.4.4-3 1.1-.6.7-.9 1.7-.9 3v6.7c0 1.3.3 2.3.9 3 .6.7 1.6 1.1 3 1.1h3.7l2.6 2.8c.3.3.7.5 1.2.5.2 0 .4 0 .6-.1.6-.3.9-.8.9-1.5v-1.6c1.4-.1 2.4-.4 3-1.1.6-.7.9-1.7.9-3v-6.7c.1-1.3-.2-2.3-.8-3Z'/%3E%3C/svg%3E" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
 
-      <!-- O que oferecemos -->
-      <section id="oferecemos">
-        <div class="container">
-          <div class="section-intro fade-in">
-            <h2>O que oferecemos</h2>
-          </div>
-          <div class="grid cards">
-            <article class="card fade-in">
-              <div class="card-icon"><i class="ph ph-robot"></i></div>
-              <h3>Atendimento automático e humanizado.</h3>
-              <p class="card-subtitle">Inclusive por áudio</p>
-              <p>Nosso chatbot entende e responde, sem precisar de equipe 24h.</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.1s">
-              <div class="card-icon"><i class="ph ph-microphone"></i></div>
-              <h3>Transcrição automática de áudio</h3>
-              <p>Ganhe tempo, não perca nenhuma mensagem importante.</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.2s">
-              <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
-              <h3>Sugestões inteligentes de resposta</h3>
-              <p>Ideal para equipes novas ou ajudar em atendimentos complexos.</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.3s">
-              <div class="card-icon"><i class="ph ph-pencil-simple-line"></i></div>
-              <h3>Correção automática de texto</h3>
-              <p>Gere respostas com tom ideal e profissional, sem esforço.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+<body>
+  <header id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="chatPro IA">
+        <img src="images/logo-chatpro.svg" alt="Logo do chatPro®" width="150" height="34" loading="lazy" />
+      </a>
+      <nav id="main-nav">
+        <a href="#oferecemos">O que oferecemos</a>
+        <a href="#porque">Por que nós</a>
+        <a href="#contato">Contato</a>
+        <a class="btn primary nav-cta" href="#contato">Agende com um Especialista</a>
+      </nav>
+      <a class="btn primary desktop-cta" href="#contato">Agende com um Especialista</a>
+      <button class="hamburger" id="nav-toggle" aria-label="Abrir menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </header>
 
-      <!-- Por que usar -->
-      <section id="porque">
-        <div class="container">
-          <div class="section-intro fade-in">
-            <h2>Por que usar os agentes com IA chatPro?</h2>
-          </div>
-          <div class="grid diferenciais">
-            <article class="card fade-in">
-              <div class="card-icon"><i class="ph ph-clock"></i></div>
-              <h3>Disponível 24/7</h3>
-              <p>Sua empresa responde mesmo fora do expediente. Nunca perca vendas por demora no atendimento.</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.1s">
-              <div class="card-icon"><i class="ph ph-currency-circle-dollar"></i></div>
-              <h3>Economia e eficiência</h3>
-              <p>Reduza custos com atendimento humano intensivo. Deixe que a IA cuide do volume e sua equipe foca no que realmente importa.</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.2s">
-              <div class="card-icon"><i class="ph ph-rocket"></i></div>
-              <h3>Fácil implementação</h3>
-              <p>Sem complicação, sem necessidade de programar — configuramos a ferramenta junto com você!".</p>
-            </article>
-            <article class="card fade-in" style="transition-delay: 0.3s">
-              <div class="card-icon"><i class="ph ph-trend-up"></i></div>
-              <h3>Flexível e escalável</h3>
-              <p>Ideal para pequenas e médias empresas, mas com robustez suficiente para crescer com você.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Prova social -->
-      <section id="prova">
-        <div class="container stats-section fade-in">
-          <div class="stats-highlight">Mais de <span data-counter="1000">0</span> empresas</div>
-          <p class="stats-subtitle">Já atendem com seus próprios agentes de IA</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-in">
+          <h1>IA para WhatsApp da sua empresa sem complicação</h1>
           <p>
-            Isso significa que muitos negócios já confiaram na nossa tecnologia para melhorar o atendimento e captar mais leads.
+            Agentes inteligentes que atendem 24/7 — para pequenas e médias empresas que querem vender mais e atender
+            melhor.
           </p>
-          <div class="logo-row fade-in">
-            <div class="logo-placeholder">
-              <img src="images/sicoob.svg" alt="Sicoob" loading="lazy" />
-            </div>
-            <div class="logo-placeholder">
-              <img src="images/suzano.svg" alt="Suzano" loading="lazy" />
-            </div>
-            <div class="logo-placeholder">
-              <img src="images/unimed.svg" alt="Unimed" loading="lazy" />
-            </div>
-            <div class="logo-placeholder">
-              <img src="images/ems.svg" alt="EMS" loading="lazy" />
-            </div>
-            <div class="logo-placeholder">
-              <img src="images/cna.svg" alt="CNA" loading="lazy" />
-            </div>
-            <div class="logo-placeholder">
-              <img src="images/sem-parar.svg" alt="Sem Parar" loading="lazy" />
-            </div>
+          <div class="cta-group">
+            <a class="btn primary" href="#contato">Agende com um Especialista</a>
           </div>
         </div>
-      </section>
-
-      <!-- CTA final -->
-      <section id="contato" class="cta-wrapper">
-        <div class="container">
-          <img src="images/img-form.svg" alt="Cliente conversando com IA" class="form-illustration" loading="lazy" />
-          <div class="cta-section fade-in">
-            <h2>Quer automatizar seu atendimento e aumentar vendas sem complicação?</h2>
-            <form>
-              <input type="text" name="nome" placeholder="Nome" required />
-              <input type="email" name="email" placeholder="E-mail" required />
-              <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required />
-              <input type="text" name="empresa" placeholder="Empresa" required />
-              <select name="tamanho" required>
-                <option value="">Tamanho da empresa</option>
-                <option value="1-10">1 a 10 funcionários</option>
-                <option value="11-50">11 a 50 funcionários</option>
-                <option value="51-200">51 a 200 funcionários</option>
-                <option value="200+">Mais de 200 funcionários</option>
-              </select>
-              <button type="submit" class="btn primary">Agende com um Especialista</button>
-            </form>
-            <p class="form-note">Te mostramos como aplicar no seu negócio.</p>
-          </div>
+        <div class="whatsapp-mockup fade-in" style="transition-delay: 0.15s">
+          <video src="videos/video-dialogo-v5.mp4" autoplay muted loop playsinline preload="metadata"
+            aria-label="Demonstração do chatPro IA respondendo conversas no WhatsApp">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <img src="images/logo-chatpro.svg" alt="Logo chatPro®" width="150" height="34" loading="lazy" />
-      <p>Descomplicando sua comunicação.</p>
-      <div class="footer-links">
-        <a href="https://www.chatpro.com.br/2lp" target="_blank" rel="noopener noreferrer">Nosso site oficial</a>
-        <a href="politica-privacidade.html">Política de Privacidade</a>
-        <a href="termos-de-uso.html">Termos de Uso</a>
       </div>
-      <p>© 2025 chatPro® Tecnologia Ltda.</p>
-    </footer>
+    </section>
 
-    <script src="main.js"></script>
-  </body>
+    <!-- O que oferecemos -->
+    <section id="oferecemos">
+      <div class="container">
+        <div class="section-intro fade-in">
+          <h2>O que oferecemos</h2>
+        </div>
+        <div class="grid cards">
+          <article class="card fade-in">
+            <div class="card-icon"><i class="ph ph-robot"></i></div>
+            <h3>Atendimento automático e humanizado.</h3>
+            <p class="card-subtitle">Inclusive por áudio</p>
+            <p>Nosso chatbot entende e responde, sem precisar de equipe 24h.</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.1s">
+            <div class="card-icon"><i class="ph ph-microphone"></i></div>
+            <h3>Transcrição automática de áudio</h3>
+            <p>Ganhe tempo, não perca nenhuma mensagem importante.</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.2s">
+            <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
+            <h3>Sugestões inteligentes de resposta</h3>
+            <p>Ideal para equipes novas ou ajudar em atendimentos complexos.</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.3s">
+            <div class="card-icon"><i class="ph ph-pencil-simple-line"></i></div>
+            <h3>Correção automática de texto</h3>
+            <p>Gere respostas com tom ideal e profissional, sem esforço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que usar -->
+    <section id="porque">
+      <div class="container">
+        <div class="section-intro fade-in">
+          <h2>Por que usar os agentes com IA chatPro?</h2>
+        </div>
+        <div class="grid diferenciais">
+          <article class="card fade-in">
+            <div class="card-icon"><i class="ph ph-clock"></i></div>
+            <h3>Disponível 24/7</h3>
+            <p>Sua empresa responde mesmo fora do expediente. Nunca perca vendas por demora no atendimento.</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.1s">
+            <div class="card-icon"><i class="ph ph-currency-circle-dollar"></i></div>
+            <h3>Economia e eficiência</h3>
+            <p>Reduza custos com atendimento humano intensivo. Deixe que a IA cuide do volume e sua equipe foca no que
+              realmente importa.</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.2s">
+            <div class="card-icon"><i class="ph ph-rocket"></i></div>
+            <h3>Fácil implementação</h3>
+            <p>Sem complicação, sem necessidade de programar — configuramos a ferramenta junto com você!".</p>
+          </article>
+          <article class="card fade-in" style="transition-delay: 0.3s">
+            <div class="card-icon"><i class="ph ph-trend-up"></i></div>
+            <h3>Flexível e escalável</h3>
+            <p>Ideal para pequenas e médias empresas, mas com robustez suficiente para crescer com você.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prova social -->
+    <section id="prova">
+      <div class="container stats-section fade-in">
+        <div class="stats-highlight">Mais de <span data-counter="1000">0</span> empresas</div>
+        <p class="stats-subtitle">Já atendem com seus próprios agentes de IA</p>
+        <p>
+          Isso significa que muitos negócios já confiaram na nossa tecnologia para melhorar o atendimento e captar mais
+          leads.
+        </p>
+        <div class="logo-row fade-in">
+          <div class="logo-placeholder">
+            <img src="images/sicoob.svg" alt="Sicoob" loading="lazy" />
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/suzano.svg" alt="Suzano" loading="lazy" />
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/unimed.svg" alt="Unimed" loading="lazy" />
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/ems.svg" alt="EMS" loading="lazy" />
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/cna.svg" alt="CNA" loading="lazy" />
+          </div>
+          <div class="logo-placeholder">
+            <img src="images/sem-parar.svg" alt="Sem Parar" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section id="contato" class="cta-wrapper">
+      <div class="container">
+        <img src="images/img-form.svg" alt="Cliente conversando com IA" class="form-illustration" loading="lazy" />
+        <div class="cta-section fade-in">
+          <h2>Quer automatizar seu atendimento e aumentar vendas sem complicação?</h2>
+          <form>
+            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="E-mail" required />
+            <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required />
+            <input type="text" name="empresa" placeholder="Site da sua Empresa" required />
+            <select name="tamanho" required>
+              <option value="">Tamanho da empresa</option>
+              <option value="1-10">1 a 10 funcionários</option>
+              <option value="11-50">11 a 50 funcionários</option>
+              <option value="51-200">51 a 200 funcionários</option>
+              <option value="200+">Mais de 200 funcionários</option>
+            </select>
+            <div class="form-field full">
+              <label>Qual a maior necessidade da sua empresa?</label>
+              <select id="necessidade" name="necessidade" required>
+                <option value="">Escolha uma opção</option>
+                <option value="Organizar o atendimento pelo WhatsApp">Organizar o atendimento pelo WhatsApp.</option>
+                <option value="Centralizar múltiplos atendentes em um número">Centralizar múltiplos atendentes em um
+                  número.</option>
+                <option value="Criar um chatbot para automatizar o atendimento">Criar um chatbot para automatizar o
+                  atendimento.</option>
+                <option value="Atender com Inteligência Artificial, 24/7">Atender com Inteligência Artificial, 24/7.
+                </option>
+                <option value="Conectar vários canais na caixa de entrada compartilhada">Conectar vários canais na caixa
+                  de entrada compartilhada.</option>
+                <option value="Integrar com CRM, ERP ou outros sistemas">Integrar com CRM, ERP ou outros sistemas.
+                </option>
+                <option value="Fazer campanhas de marketing pelo WhatsApp">Fazer campanhas de marketing pelo WhatsApp.
+                </option>
+                <option value="Atender com o WhatsApp Oficial (Verificado e Seguro)">Atender com o WhatsApp Oficial
+                  (Verificado e Seguro).</option>
+              </select>
+            </div>
+            <button type="submit" class="btn primary">Agende com um Especialista</button>
+          </form>
+          <p class="form-note">Te mostramos como aplicar no seu negócio.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="success-modal" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fechar pop-up">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="modal-grid">
+        <div class="modal-text">
+          <h3>Recebemos seu contato com sucesso!</h3>
+          <p>
+            Fique de olho, em poucos minutos vamos entrar em contato para conversarmos melhor sobre como podemos
+            <strong class="highlight">otimizar o seu atendimento!</strong>
+          </p>
+          <a class="btn primary" href="https://www.instagram.com/chatpro.oficial/" target="_blank"
+            rel="noopener noreferrer">Enquanto isso, conheça melhor o chatPro aqui!</a>
+        </div>
+        <div class="modal-video">
+          <iframe src="https://www.youtube.com/embed/5Uq2tJ3oXk8" title="Vídeo institucional chatPro" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="images/logo-chatpro.svg" alt="Logo chatPro®" width="150" height="34" loading="lazy" />
+    <p>Descomplicando sua comunicação.</p>
+    <div class="footer-links">
+      <a href="https://www.chatpro.com.br/2lp" target="_blank" rel="noopener noreferrer">Nosso site oficial</a>
+      <a href="politica-privacidade.html">Política de Privacidade</a>
+      <a href="termos-de-uso.html">Termos de Uso</a>
+    </div>
+    <p>© 2025 chatPro® Tecnologia Ltda.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
 </html>

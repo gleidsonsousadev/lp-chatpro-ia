@@ -74,4 +74,37 @@ if (counter) {
 
   counterObserver.observe(counter);
 }
+
+const form = document.querySelector("#contato form");
+const modal = document.getElementById("success-modal");
+const modalOverlay = document.getElementById("modal-overlay");
+const modalClose = document.getElementById("modal-close");
+
+const openModal = () => {
+  if (!modal) return;
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+};
+
+const closeModal = () => {
+  if (!modal) return;
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+form?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  openModal();
+  form.reset();
+});
+
+modalOverlay?.addEventListener("click", closeModal);
+modalClose?.addEventListener("click", closeModal);
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    closeModal();
+  }
+});
     
