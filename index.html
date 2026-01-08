@@ -13,8 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://chatpro.com.br/ia" />
   <meta property="og:image" content="https://chatpro.com.br/ia/og-image.jpg" />
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%2325D066' cx='16' cy='16' r='16'/%3E%3Cpath fill='%23fff' d='M21.4 10.2c-.6-.7-1.6-1.1-3-1.1h-5.8c-1.4 0-2.4.4-3 1.1-.6.7-.9 1.7-.9 3v6.7c0 1.3.3 2.3.9 3 .6.7 1.6 1.1 3 1.1h3.7l2.6 2.8c.3.3.7.5 1.2.5.2 0 .4 0 .6-.1.6-.3.9-.8.9-1.5v-1.6c1.4-.1 2.4-.4 3-1.1.6-.7.9-1.7.9-3v-6.7c.1-1.3-.2-2.3-.8-3Z'/%3E%3C/svg%3E" />
+  <link rel="icon" href="favicon.ico" />
   <link
     href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
@@ -70,28 +69,21 @@
         <div class="section-intro fade-in">
           <h2>O que oferecemos</h2>
         </div>
-        <div class="grid cards">
-          <article class="card fade-in">
-            <div class="card-icon"><i class="ph ph-robot"></i></div>
-            <h3>Atendimento automático e humanizado.</h3>
-            <p class="card-subtitle">Inclusive por áudio</p>
-            <p>Nosso chatbot entende e responde, sem precisar de equipe 24h.</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.1s">
-            <div class="card-icon"><i class="ph ph-microphone"></i></div>
-            <h3>Transcrição automática de áudio</h3>
-            <p>Ganhe tempo, não perca nenhuma mensagem importante.</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.2s">
-            <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
-            <h3>Sugestões inteligentes de resposta</h3>
-            <p>Ideal para equipes novas ou ajudar em atendimentos complexos.</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.3s">
-            <div class="card-icon"><i class="ph ph-pencil-simple-line"></i></div>
-            <h3>Correção automática de texto</h3>
-            <p>Gere respostas com tom ideal e profissional, sem esforço.</p>
-          </article>
+        <div class="oferecemos-content">
+          <div class="oferecemos-list fade-in">
+            <ul class="check-list">
+              <li><i class="ph ph-check-circle"></i>Atendimento automático e humanizado.</li>
+              <li><i class="ph ph-check-circle"></i>Transcrição automática de áudio</li>
+              <li><i class="ph ph-check-circle"></i>Sugestões inteligentes de resposta</li>
+              <li><i class="ph ph-check-circle"></i>Correção automática de texto</li>
+            </ul>
+          </div>
+          <div class="oferecemos-video fade-in" style="transition-delay: 0.1s">
+            <video id="oferecemos-video" muted playsinline preload="metadata" loop>
+              <source src="videos/video-oque-oferecemos.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+          </div>
         </div>
       </div>
     </section>
@@ -124,6 +116,9 @@
             <h3>Flexível e escalável</h3>
             <p>Ideal para pequenas e médias empresas, mas com robustez suficiente para crescer com você.</p>
           </article>
+        </div>
+        <div class="section-cta fade-in" style="transition-delay: 0.4s">
+          <a class="btn dark" href="#contato">Agende com um Especialista</a>
         </div>
       </div>
     </section>

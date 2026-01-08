@@ -141,6 +141,24 @@ nav a:focus-visible {
   transform: translateY(-2px) scale(1.02);
 }
 
+.btn.dark {
+  background: var(--preto);
+  color: var(--branco);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.btn.dark:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+.section-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
 .hamburger {
   width: 44px;
   height: 44px;
@@ -276,6 +294,46 @@ p {
 
 .cards {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.oferecemos-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.oferecemos-video video {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #050505;
+}
+
+.check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.check-list i {
+  color: var(--verde-principal);
+  font-size: 1.4rem;
+  margin-top: 0.15rem;
 }
 
 .card {
@@ -723,6 +781,10 @@ footer .footer-links a:hover {
 
   .hero-grid {
     gap: 2.5rem;
+  }
+
+  .oferecemos-content {
+    grid-template-columns: 1fr;
   }
 }
 
