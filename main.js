@@ -42,6 +42,27 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
+const ofereceVideo = document.getElementById("oferecemos-video");
+if (ofereceVideo) {
+  const videoObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (ofereceVideo.ended) {
+            ofereceVideo.currentTime = 0;
+          }
+          ofereceVideo.play().catch(() => {});
+        } else {
+          ofereceVideo.pause();
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  videoObserver.observe(ofereceVideo);
+}
+
 const counter = document.querySelector("[data-counter]");
 if (counter) {
   const animateCounter = () => {
@@ -74,4 +95,37 @@ if (counter) {
 
   counterObserver.observe(counter);
 }
+
+const form = document.querySelector("#contato form");
+const modal = document.getElementById("success-modal");
+const modalOverlay = document.getElementById("modal-overlay");
+const modalClose = document.getElementById("modal-close");
+
+const openModal = () => {
+  if (!modal) return;
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+};
+
+const closeModal = () => {
+  if (!modal) return;
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+form?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  openModal();
+  form.reset();
+});
+
+modalOverlay?.addEventListener("click", closeModal);
+modalClose?.addEventListener("click", closeModal);
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    closeModal();
+  }
+});
     
