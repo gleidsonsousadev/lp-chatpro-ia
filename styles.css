@@ -299,10 +299,22 @@ p {
 
 .oferecemos-content {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 2.5rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.oferecemos-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.oferecemos-video {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
 }
 
 #oferecemos {
@@ -311,12 +323,13 @@ p {
 
 .oferecemos-video video {
   width: 100%;
+  height: 100%;
   display: block;
   border-radius: 16px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
-  aspect-ratio: 16 / 9;
   object-fit: contain;
   background: #050505;
+  max-height: 85%;
 }
 
 .check-list {
@@ -799,6 +812,10 @@ footer .footer-links a:hover {
 
   .oferecemos-content {
     grid-template-columns: 1fr;
+  }
+
+  .oferecemos-video video {
+    height: auto;
   }
 }
 
