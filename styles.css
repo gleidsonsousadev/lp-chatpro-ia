@@ -231,6 +231,7 @@ p {
   background: #010602;
   position: relative;
   isolation: isolate;
+  padding: 5rem 0 3rem;
 }
 
 .hero::after {
@@ -304,13 +305,17 @@ p {
   margin-top: 2.5rem;
 }
 
+#oferecemos {
+  padding-top: 3.5rem;
+}
+
 .oferecemos-video video {
   width: 100%;
   display: block;
   border-radius: 16px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   background: #050505;
 }
 
@@ -320,7 +325,7 @@ p {
   padding: 0;
   display: grid;
   gap: 1rem;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -332,8 +337,8 @@ p {
 
 .check-list i {
   color: var(--verde-principal);
-  font-size: 1.4rem;
-  margin-top: 0.15rem;
+  font-size: 1.7rem;
+  margin-top: 0.12rem;
 }
 
 .card {
@@ -397,6 +402,11 @@ p {
 
 #porque .card {
   background: var(--preto);
+}
+
+#porque .card h3 {
+  font-size: 1.85rem;
+  color: var(--verde-principal);
 }
 
 #porque .card:hover {
@@ -539,6 +549,10 @@ form button {
   grid-column: 1 / -1;
   margin-top: 0.5rem;
   width: 100%;
+}
+
+.form-note {
+  margin-top: 1.25rem;
 }
 
 
