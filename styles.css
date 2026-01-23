@@ -529,14 +529,14 @@ p {
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
 
-form {
+.cta-section form {
   margin-top: 2rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(240px, 1fr));
 }
 
-.form-field {
+.cta-section .form-field {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -544,21 +544,21 @@ form {
   text-align: left;
 }
 
-.form-field.full {
+.cta-section .form-field.full {
   grid-column: 1 / -1;
 }
 
-.form-field label {
+.cta-section .form-field label {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--branco);
 }
 
-.form-field small {
+.cta-section .form-field small {
   color: var(--cinza-1);
 }
 
-form button {
+.cta-section form button {
   grid-column: 1 / -1;
   margin-top: 0.5rem;
   width: 100%;
@@ -587,6 +587,99 @@ select {
   background-size: 6px 6px;
   background-repeat: no-repeat;
   padding-right: 2.5rem;
+}
+
+.hero-form-card {
+  background: #f7f7f7;
+  color: #0b0b0b;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  max-width: 520px;
+  justify-self: end;
+}
+
+.hero-form-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1b1b1b;
+}
+
+.hero-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.hero-input {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.hero-input i {
+  font-size: 1.1rem;
+  color: #8a8a8a;
+}
+
+.hero-input input {
+  width: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  font-size: 0.95rem;
+  outline: none;
+  color: #111111;
+}
+
+.hero-helper {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  margin-top: -0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-passwords {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.hero-terms {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-terms input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--verde-2);
+}
+
+.hero-terms a {
+  color: #1b1b1b;
+  text-decoration: underline;
+}
+
+.hero-submit {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
 }
 
 .modal {
@@ -796,10 +889,6 @@ footer .footer-links a:hover {
     display: inline-flex;
   }
 
-  .header-inner .btn.primary {
-    display: none;
-  }
-
   .whatsapp-mockup {
     margin: 0 auto;
     width: min(520px, 70vw);
@@ -853,7 +942,15 @@ footer .footer-links a:hover {
     gap: 2rem;
   }
 
-  form {
+  .cta-section form {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-form-card {
+    max-width: 100%;
+  }
+
+  .hero-passwords {
     grid-template-columns: 1fr;
   }
 

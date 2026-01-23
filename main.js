@@ -10,7 +10,7 @@ const toggleNavigation = () => {
 };
 
 navToggle?.addEventListener("click", toggleNavigation);
-nav.querySelectorAll("a").forEach((link) =>
+nav?.querySelectorAll("a").forEach((link) =>
   link.addEventListener("click", () => {
     if (nav.classList.contains("open")) {
       toggleNavigation();
