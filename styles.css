@@ -118,6 +118,10 @@ nav a:focus-visible {
   display: none;
 }
 
+.trial-cta {
+  font-size: 1.08rem;
+}
+
 .btn.primary {
   background: linear-gradient(135deg, var(--verde-principal), var(--verde-3));
   color: var(--preto);

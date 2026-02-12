@@ -42,6 +42,24 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
+const heroSection = document.getElementById("hero");
+const heroNameInput = document.getElementById("hero-nome");
+
+const focusHeroNameInput = () => {
+  if (!heroNameInput) return;
+  heroNameInput.focus({ preventScroll: true });
+  const length = heroNameInput.value.length;
+  heroNameInput.setSelectionRange(length, length);
+};
+
+document.querySelectorAll("a.trial-cta[href='#hero']").forEach((cta) => {
+  cta.addEventListener("click", (event) => {
+    event.preventDefault();
+    heroSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.setTimeout(focusHeroNameInput, 450);
+  });
+});
+
 const ofereceVideo = document.getElementById("oferecemos-video");
 if (ofereceVideo) {
   const videoObserver = new IntersectionObserver(
