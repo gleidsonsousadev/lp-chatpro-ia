@@ -60,27 +60,6 @@ document.querySelectorAll("a.trial-cta[href='#hero']").forEach((cta) => {
   });
 });
 
-const ofereceVideo = document.getElementById("oferecemos-video");
-if (ofereceVideo) {
-  const videoObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (ofereceVideo.ended) {
-            ofereceVideo.currentTime = 0;
-          }
-          ofereceVideo.play().catch(() => {});
-        } else {
-          ofereceVideo.pause();
-        }
-      });
-    },
-    { threshold: 0.4 }
-  );
-
-  videoObserver.observe(ofereceVideo);
-}
-
 const counter = document.querySelector("[data-counter]");
 if (counter) {
   const animateCounter = () => {
