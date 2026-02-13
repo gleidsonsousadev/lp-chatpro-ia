@@ -44,6 +44,7 @@ document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
 const heroSection = document.getElementById("hero");
 const heroNameInput = document.getElementById("hero-nome");
+const mobileViewport = window.matchMedia("(max-width: 768px)");
 
 const focusHeroNameInput = () => {
   if (!heroNameInput) return;
@@ -55,6 +56,12 @@ const focusHeroNameInput = () => {
 document.querySelectorAll("a.trial-cta[href='#hero']").forEach((cta) => {
   cta.addEventListener("click", (event) => {
     event.preventDefault();
+    if (mobileViewport.matches) {
+      heroSection?.scrollIntoView({ behavior: "auto", block: "start" });
+      focusHeroNameInput();
+      return;
+    }
+
     heroSection?.scrollIntoView({ behavior: "smooth", block: "start" });
     window.setTimeout(focusHeroNameInput, 450);
   });
